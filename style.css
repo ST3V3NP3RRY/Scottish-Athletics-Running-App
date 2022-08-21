@@ -1,0 +1,103 @@
+:root {
+  --main-color: #004482;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(199, 227, 236);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: poppins, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  max-width: 600px;
+}
+h1 {
+  width: 100%;
+  font-size: 1.75rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.intro {
+  width: 100%;
+  margin: 1.5rem 0;
+}
+/* ------ form styles -------*/
+
+form,
+.athlete-table {
+  background-color: white;
+  padding: 1.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+input {
+  border: none;
+  width: 100%;
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+input:focus {
+  outline: none;
+}
+.form-group {
+  display: flex;
+}
+fieldset {
+  border: none;
+}
+
+legend {
+  margin-bottom: 1rem;
+  color: rgb(140, 139, 139);
+}
+
+.lap-label {
+  margin-right: 1rem;
+  width: 62px;
+}
+
+.name-label {
+  width: 130px;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  font-weight: 700;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #002b53;
+}
+
+hr {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+/* ------ Athlete table styles -------*/
+
+.athlete-table {
+  margin-top: 2rem;
+}

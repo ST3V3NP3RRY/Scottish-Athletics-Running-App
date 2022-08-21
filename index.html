@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scottish Athletics - Women's 400 meter trials</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <img class="top-logo" src="images/scottish-athletics-logo.svg" />
+      <h1>Women's 400 metre trials</h1>
+      <p class="intro">
+        Submit the first and second name of the runner and the times taken to
+        run both laps and press submit. The Runners names will be displayed with
+        their times in the table below.
+      </p>
+      <form action="" id="submit-form">
+        <fieldset>
+          <legend>Enter name of athlete :</legend>
+          <div class="form-group">
+            <hr />
+            <label class="name-label" for="fName">First Name :</label>
+            <input type="text" name="fName" id="fName" required />
+          </div>
+          <hr />
+          <div class="form-group">
+            <label class="name-label" for="fName">Last Name :</label>
+            <input type="text" name="lName" id="lName" required />
+          </div>
+          <hr />
+        </fieldset>
+        <fieldset>
+          <legend>Enter runners lap times in seconds:</legend>
+          <div class="form-group">
+            <label class="lap-label" for="firstTime">Lap 1 :</label>
+            <input id="firstTime" type="text" name="firstTime" required />
+          </div>
+          <hr />
+          <div class="form-group">
+            <label class="lap-label" for="secondTime">Lap 2 :</label>
+            <input id="secondTime" type="text" name="secondTime" required />
+          </div>
+          <hr />
+        </fieldset>
+        <button id="add_btn" type="submit">ADD +</button>
+      </form>
+
+      <section class="athlete-table">
+        <h2>Athlete lap times</h2>
+        <p id="athlete-data">Replace this text</p>
+      </section>
+    </main>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
